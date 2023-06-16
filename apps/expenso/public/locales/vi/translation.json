@@ -1,0 +1,28 @@
+{
+  "app": {
+    "logout": "Đăng xuất",
+    "menu": {
+      "home": "Trang chủ",
+      "dashboard": "Bảng điều khiển",
+      "about": "Về chúng tôi",
+      "contact": "Liên hệ"
+    },
+    "header": {
+      "chooseLanguage": "Chọn ngôn ngữ",
+      "chooseMode": "Chọn chế độ",
+      "chooseTheme": "Chọn theme"
+    }
+  },
+  "authentication": {
+    "login": "Đăng nhập"
+  },
+  "validation": {
+    "email": {
+      "required": "Vui lòng nhập Email",
+      "isEmail": "Email không phù hợp"
+    },
+    "password": {
+      "required": "Vui lòng nhập mật khẩu"
+    }
+  }
+}

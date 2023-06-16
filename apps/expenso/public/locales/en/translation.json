@@ -1,0 +1,28 @@
+{
+  "app": {
+    "logout": "Logout",
+    "menu": {
+      "home": "Home",
+      "dashboard": "Dashboard",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "header": {
+      "chooseLanguage": "Choose Language",
+      "chooseMode": "Choose Mode",
+      "chooseTheme": "Choose theme color"
+    }
+  },
+  "authentication": {
+    "login": "Login"
+  },
+  "validation": {
+    "email": {
+      "required": "Email is required",
+      "isEmail": "Email is invalid"
+    },
+    "password": {
+      "required": "Password is required"
+    }
+  }
+}
