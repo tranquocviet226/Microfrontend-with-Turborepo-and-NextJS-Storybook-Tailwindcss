@@ -9,6 +9,8 @@ Hros-Skeleton based on React JS and Next JS Framework.
 - **TailwindCss + Headlessui**
 - **Redux Toolkit**
 - **Redux Toolkit Query**
+- **i18next**
+- **React Hook Form + Yup** 
 - **Storybook**
 - **Testing**
 
