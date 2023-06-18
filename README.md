@@ -1,81 +1,80 @@
-# Turborepo starter
+# 🚀 Turborepo starter
 
-This is an official starter Turborepo.
+One of the challenges of building microfrontends is dependency management and build systems. In the packages and apps in this monorepo, we'll be using Turborepo to earn great developer experience for our teams with minimal configuration.
 
-## Using this example
+## 🔨 Prerequisites
 
-Run the following command:
+    git --version
+    # >= 2.40.1
+    node --version
+    # >= v16.0.0
+    pnpm --version
+    # >= 8.6.0
 
+## ✨ Features
+
+- Everything is in TypeScript
+- Next.js is used for the applications in ./apps
+- Shared packages used by the apps in ./packages
+- Tailwind CSS for utility CSS in React components and to build the design system
+- Storybook is used for the components that are part of the hros-ui package and its setup is shared in the storybook package
+- The ESLint config lives in custom-eslint-config
+- Bundle your TypeScript library with no config
+
+## 📦 Run scripts
+
+Install packages
 ```sh
-npx create-turbo@latest
+pnpm install
 ```
 
-## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
+Start development
+```sh
 pnpm dev
 ```
 
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
+Build
+```sh
+pnpm build
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+## 🔎 What's inside?
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+This Turborepo includes the following packages/apps:
 
+### 📂 Apps and Packages
+
+- `expenso`: a [Next.js](https://nextjs.org/) app
+- `storybook`: Storybook based on Vite [Storybook](https://storybook.js.org/)
+- `hros-ui`: a stub React component library shared by both `expenso` and `storybook` applications
+- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `tailwind-copnfig`: for utility CSS in React components and to build the design system
+
+## 🖥 Code Structure
+
+```shell
+.
+├── README.md                                           # README file
+├── .vscode                                             # VSCode configuration
+├── app
+│   ├── expenso                                         # Expenso app
+│   ├── storybook                                       # Storybook helps you build UI components
+│   ├── ...                                             # Other app ...
+├── packages
+│   ├── eslint-config-custom                            # eslint configurations
+│   ├── tailwind-config                                 # tailwind configurations
+│   ├── tsconfig                                        # tsconfig configurations
+│   ├── ui                                              # Hros UI Component
+├── .eslintrc.json              
+├── .prettierrc.json
+├── .npmrc 
+├── package.json                                    
+└── turbo.json                                          # Turbo configuration
 ```
-npx turbo link
-```
 
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+## 📙 Technical Documents
+- Turborepo: https://turbo.build/repo/docs
+- Next JS: https://nextjs.org/docs
+- Tailwind: https://tailwindcss.com/docs/installation
+- Storybook for React: https://storybook.js.org/docs/react
